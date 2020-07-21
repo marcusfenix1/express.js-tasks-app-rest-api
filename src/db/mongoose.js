@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const dbAddress = process.env.LOCAL_DB_ADDRESS;
+const dbURL = process.env.DATABASE_URL;
 
-mongoose.connect(dbAddress, {
+mongoose.connect(dbURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
